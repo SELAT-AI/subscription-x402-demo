@@ -1,6 +1,6 @@
 # subscription-x402-demo
 
-TypeScript + Express x402 server demo for subscription payments.
+This project adapts traditional subscription billing to the machine payment protocol (x402), enabling agents to call [selat-pay](https://github.com/SELAT-AI/selat-pay) for subscription fee payments.
 
 ## What this demo does
 
@@ -48,20 +48,6 @@ copy .env.example .env
 npm run dev
 ```
 
-## Client test script
-
-Run:
-
-```bash
-npm run client:test
-```
-
-Script behavior:
-
-- Calls endpoint for a no-charge business scenario and expects `200`
-- Calls endpoint for a charge-required business scenario and expects `402`
-- Prints decoded `PAYMENT-REQUIRED` payload
-
 ## Tests
 
 Run:
@@ -79,4 +65,7 @@ Includes:
 
 - This demo intentionally leaves subscription state check and payment record persistence as business-layer hooks.
 - For production usage, connect those hooks to your real user/subscription datastore.
-- Facilitator integration follows CDP production guidance: https://docs.cdp.coinbase.com/x402/seller/production-configuration#use-cdp-with-an-existing-x402-server
+- Facilitator integration refers to [CDP Facilitator documents](https://docs.cdp.coinbase.com/x402/seller/facilitator).
+- Facilitator may incur fees; please refer to [CDP Facilitator documents](https://docs.cdp.coinbase.com/x402/seller/facilitator).
+- Copyright (c) 2026 SELAT AI LABS, INC.
+- Redistribution should retain the attribution in [NOTICE](NOTICE) as required by Apache 2.0 section 4(d).

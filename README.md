@@ -1,6 +1,6 @@
 # subscription-x402-demo
 
-This project adapts traditional subscription billing to the machine payment protocol (x402), enabling agents to call [selat-pay](https://github.com/SELAT-AI/selat-pay) for subscription fee payments.
+This project adapts traditional subscription billing to the x402 payment protocol, enabling agents to call [selat-pay](https://github.com/SELAT-AI/selat-pay) for subscription fee payments.
 
 ## What this demo does
 

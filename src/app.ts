@@ -104,7 +104,6 @@ export function createApp(options: CreateAppOptions): express.Express {
         message: "Payment verified and subscription content granted.",
         data: {
           plan: "pro",
-          featureFlags: ["priority-support", "advanced-insights"],
         },
       });
     },

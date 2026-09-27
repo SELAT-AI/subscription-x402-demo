@@ -42,6 +42,8 @@ copy .env.example .env
 - `RECEIVER_WALLET_ADDRESS`: receiver wallet address
 - `SUBSCRIPTION_PRICE`: payment amount (number only), e.g. `18.5`
 
+Note: CDP_API_KEY_ID and CDP_API_KEY_SECRET should be created on the [Coinbase developer platform](https://portal.cdp.coinbase.com/).
+
 4. Start server:
 
 ```bash
